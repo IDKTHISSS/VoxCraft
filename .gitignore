@@ -11,7 +11,7 @@ bin
 lib
 
 # CLion  IntelliJ
-.idea
+.idea/
 .iml
 
 # OS files
