@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[]) {
     // Initialize the application
-    Engine::Application app("VoxCraft Beta", 800, 600);
+    Engine::Application app("VoxCraft Beta", 1920, 1080);
 
     // Run the main loop of the application
     app.Run();
