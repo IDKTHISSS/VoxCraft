@@ -1,0 +1,317 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "Engine",
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Engine-Debug-e7cda9100e735d363573.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Engine",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						11
+					]
+				},
+				{
+					"build" : "Engine/libs/googletest",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Engine.libs.googletest-Debug-38a43306d12f3ed6be09.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Engine/libs/googletest"
+				},
+				{
+					"build" : "Engine/libs/googletest/googlemock",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Engine.libs.googletest.googlemock-Debug-bc6ed721d8a57b7d6f34.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "Engine/libs/googletest/googlemock",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "Engine/libs/googletest/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Engine.libs.googletest.googletest-Debug-a8251c555f7d093be1e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "Engine/libs/googletest/googletest",
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				},
+				{
+					"build" : "Engine/libs/SDL",
+					"jsonFile" : "directory-Engine.libs.SDL-Debug-7c0f3c7d998591df93a8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 5,
+					"source" : "Engine/libs/SDL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "VoxCraft",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "VoxCore",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 1
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "SDL3",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "SDL3-shared::@130260c59cec5b6cd9f7",
+					"jsonFile" : "target-SDL3-shared-Debug-376f5005330a6b5bc5ef.json",
+					"name" : "SDL3-shared",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SDL3-static::@130260c59cec5b6cd9f7",
+					"jsonFile" : "target-SDL3-static-Debug-22fcdbeef563bff87b81.json",
+					"name" : "SDL3-static",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SDL3_test::@130260c59cec5b6cd9f7",
+					"jsonFile" : "target-SDL3_test-Debug-aa5d8a920cd98ac0c82b.json",
+					"name" : "SDL3_test",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "SDL_uclibc::@130260c59cec5b6cd9f7",
+					"jsonFile" : "target-SDL_uclibc-Debug-9312459d7e411da3ae82.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "VoxCore::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-VoxCore-Debug-6da37f6e74368698f7d2.json",
+					"name" : "VoxCore",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "VoxCoreTests::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-VoxCoreTests-Debug-b6da8df29062a92968b3.json",
+					"name" : "VoxCoreTests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VoxCraft::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VoxCraft-Debug-dc8052ba750b3fd8dad6.json",
+					"name" : "VoxCraft",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock::@285a2af8f8560ca36821",
+					"jsonFile" : "target-gmock-Debug-c54adfe34cc1f032bbff.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_main::@285a2af8f8560ca36821",
+					"jsonFile" : "target-gmock_main-Debug-70e9c6a1719bdc606269.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest::@c19e712fe57821d917e2",
+					"jsonFile" : "target-gtest-Debug-187ef72cee59f64e5094.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_main::@c19e712fe57821d917e2",
+					"jsonFile" : "target-gtest_main-Debug-d16c1d73d7ec5927a775.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-imgui-Debug-e89ef4f62eded08f48e7.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/IDKTHIS/Desktop/MyGame/cmake-build-debug",
+		"source" : "C:/Users/IDKTHIS/Desktop/MyGame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
