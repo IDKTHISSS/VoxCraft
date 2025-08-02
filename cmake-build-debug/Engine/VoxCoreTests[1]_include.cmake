@@ -1,5 +1,5 @@
-if(EXISTS "C:/Users/IDKTHIS/Desktop/MyGame/cmake-build-debug/Engine/VoxCoreTests[1]_tests.cmake")
-  include("C:/Users/IDKTHIS/Desktop/MyGame/cmake-build-debug/Engine/VoxCoreTests[1]_tests.cmake")
+if(EXISTS "/home/idkthis/Рабочий стол/MyGame/cmake-build-debug/Engine/VoxCoreTests[1]_tests.cmake")
+  include("/home/idkthis/Рабочий стол/MyGame/cmake-build-debug/Engine/VoxCoreTests[1]_tests.cmake")
 else()
   add_test(VoxCoreTests_NOT_BUILT VoxCoreTests_NOT_BUILT)
 endif()

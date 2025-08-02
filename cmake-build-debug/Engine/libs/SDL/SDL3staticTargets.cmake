@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.29)
+cmake_policy(VERSION 2.8.3...3.30)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -52,7 +52,8 @@ add_library(SDL3::SDL3-static STATIC IMPORTED)
 set_target_properties(SDL3::SDL3-static PROPERTIES
   COMPATIBLE_INTERFACE_BOOL "SDL3_SHARED"
   COMPATIBLE_INTERFACE_STRING "SDL_VERSION"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:m>;\$<LINK_ONLY:kernel32>;\$<LINK_ONLY:user32>;\$<LINK_ONLY:gdi32>;\$<LINK_ONLY:winmm>;\$<LINK_ONLY:imm32>;\$<LINK_ONLY:ole32>;\$<LINK_ONLY:oleaut32>;\$<LINK_ONLY:version>;\$<LINK_ONLY:uuid>;\$<LINK_ONLY:advapi32>;\$<LINK_ONLY:setupapi>;\$<LINK_ONLY:shell32>;\$<LINK_ONLY:dinput8>;SDL3::Headers"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:m>;SDL3::Headers"
+  INTERFACE_LINK_OPTIONS "-pthread"
   INTERFACE_SDL3_SHARED "FALSE"
   INTERFACE_SDL_VERSION "SDL3"
 )
@@ -60,8 +61,8 @@ set_target_properties(SDL3::SDL3-static PROPERTIES
 # Import target "SDL3::SDL3-static" for configuration "Debug"
 set_property(TARGET SDL3::SDL3-static APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(SDL3::SDL3-static PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Users/IDKTHIS/Desktop/MyGame/cmake-build-debug/Engine/libs/SDL/libSDL3.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C"
+  IMPORTED_LOCATION_DEBUG "/home/idkthis/Рабочий стол/MyGame/cmake-build-debug/Engine/libs/SDL/libSDL3.a"
   )
 
 # Make sure the targets which have been exported in some other
